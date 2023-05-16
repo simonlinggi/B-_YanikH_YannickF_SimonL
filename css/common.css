@@ -46,7 +46,16 @@ p{
 
 .footer {
   background-color: #EA8500;
-  height: 50px;
   width: 100%;
+  padding: 20px;
   text-align: center;
 }
+
+.footer-icons {
+  display: flex;
+  justify-content: center;
+ }
+
+ .footer-icon {
+  margin: 0 10px;
+ }
