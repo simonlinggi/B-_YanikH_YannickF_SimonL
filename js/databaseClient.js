@@ -45,3 +45,25 @@ const databaseClient = {
     )}) VALUES ('${values.join("','")}')`;
     return await databaseClient.executeSqlQuery(sql);
   },
+  
+  
+  
+ /*Script für Slider*/ 
+  var images = document.querySelectorAll('.slider img');
+var currentImage = 0;
+
+function showImage(n) {
+  images[currentImage].classList.remove('active');
+  currentImage = (n + images.length) % images.length;
+  images[currentImage].classList.add('active');
+}
+
+function nextImage() {
+  showImage(currentImage + 1);
+}
+
+function previousImage() {
+  showImage(currentImage - 1);
+}
+
+setInterval(nextImage, 3000);
