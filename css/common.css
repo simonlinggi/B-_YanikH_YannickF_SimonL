@@ -47,6 +47,7 @@ p{
 .footer {
   background-color: #EA8500;
   width: 100%;
+  heigt: 100px;
   padding: 20px;
   text-align: center;
 }
