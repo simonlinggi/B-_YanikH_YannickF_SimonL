@@ -44,7 +44,7 @@ header {
   position: sticky;
   top: 0;
   height: 150px;
-  widht: 100%;
+  widht: 100vw;
   padding: 20px;
 }
 
