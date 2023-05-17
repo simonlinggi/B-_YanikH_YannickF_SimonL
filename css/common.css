@@ -11,7 +11,7 @@
 }
 
 .logo{
-  width: 10%;
+  width: 8%;
   height: auto;
 }
 
@@ -41,6 +41,7 @@ header {
   top: 0;
   height: 150px;
   widht: 100vw;
+  padding: 20px;
 }
 
 .content {
