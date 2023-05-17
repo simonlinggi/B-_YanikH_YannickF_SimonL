@@ -16,6 +16,11 @@
   margin: 5px;
 }
 
+nav {
+  display: flex;
+  align-items: center;
+}
+
 nav ul {
   list-style: none;
   padding: 0;
