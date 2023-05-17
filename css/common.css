@@ -39,9 +39,11 @@ p{
   font-size: 1em;
 }
 
-.header {
+header {
   background-color: #EA8500;
-  height: 100px;
+  position: sticky;
+  top: 0;
+  height: 150px;
 }
 
 .content {
