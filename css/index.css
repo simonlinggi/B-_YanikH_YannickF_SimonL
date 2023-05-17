@@ -43,10 +43,7 @@ body {
       flex-direction: column;
     }
 
-.titel{
- font-family: 'Roboto', sans-serif;
-  font-size: 3em; 
-}
+
 
 .slider {
   width: 100%;
