@@ -27,11 +27,6 @@ nav ul li {
   margin-right: 10px;
 }
 
-nav ul li::before {
-  content: "•";
-  margin-right: 5px;
-}
-
 h1{
   font-family: 'Roboto', sans-serif;
   font-size: 3em;
