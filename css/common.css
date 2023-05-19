@@ -37,6 +37,14 @@ nav ul li:first-child {
   text-decoration: none;
 }
 
+nav ul li a {
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  font-weight: 900; 
+}
+
 h1{
   font-family: 'Roboto', sans-serif;
   font-size: 3em;
