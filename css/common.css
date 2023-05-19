@@ -62,10 +62,9 @@ p{
 
 header {
   background-color: #EA8500;
-  position: sticky;
   top: 0;
   height: 150px;
-  widht: 100vw;
+  widht: 100%;
   padding: 20px;
 }
 
