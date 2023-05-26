@@ -10,6 +10,17 @@
   margin: 0;
 }
 
+
+body {
+     margin: 0;
+     padding: 0;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: 100vh;
+   }
+
+
 .logo{
   width: 8%;
   height: auto;
