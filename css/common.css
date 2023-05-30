@@ -1,17 +1,20 @@
 /* CSS Code, der für alle Web Pages gleich ist */
 
 .webpage {
-  display: flex;
-  flex-direction: column;
-  /* min-height: bewirkt, dass der Footer zuunterst ist. */
+     margin: 0;
+     padding: 0;
+     display: flex;
+    flex-direction: column;
+    /* min-height: bewirkt, dass der Footer zuunterst ist. */
   min-height: 100vh;
   /* padding, margin: 0: bewirkt, dass es mit 100vh zuunterist */
-  padding: 0;
-  margin: 0;
+     justify-content: center;
+     align-items: center;
+     height: 100vh;
 }
 
 
-body {
+ {
      margin: 0;
      padding: 0;
      display: flex;
