@@ -34,7 +34,7 @@
   margin-left: 10%
 }
 
-nav {
+.nav {
   display: flex;
   align-items: center;
 }
