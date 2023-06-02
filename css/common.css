@@ -28,9 +28,10 @@
 
 
 .logo{
-  width: 8%;
+  width: 10%;
   height: auto;
   margin: 5px;
+  margin-left: 10%
 }
 
 nav {
