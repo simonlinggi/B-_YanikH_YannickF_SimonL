@@ -97,7 +97,7 @@ p{
 .content {
   flex-grow: 1;
   background-color: #ffffff;
-
+  max-width: 70%;
 }
 
  .footer {
