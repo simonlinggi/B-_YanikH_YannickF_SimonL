@@ -38,9 +38,8 @@ input[type="submit"] {
   border: none;
   border-radius: 4px;
   cursor: pointer;
-}
-}
-.container {
+}  
+  .container {
   display: flex;
 }
 
@@ -50,13 +49,24 @@ input[type="submit"] {
 }
 
 .text-column {
-  flex: 2;
+  flex: 1;
   padding: 20px;
-  width: 50%;
 }
 
 .gewinnspiel-image {
-  flex: 2;
+  flex: 1;
   padding: 20px;
-  width: 50%;
-  ]
+}
+
+@media (min-width: 768px) {
+  .text-column {
+    flex: 2;
+    width: 50%;
+  }
+
+  .gewinnspiel-image {
+    flex: 2;
+    width: 50%;
+  }
+}
+
