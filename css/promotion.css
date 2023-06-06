@@ -40,40 +40,33 @@ input[type="submit"] {
   cursor: pointer;
 }  
   
-table {
-  width: 100%;
-  border-collapse: collapse;
-}
+ table {
+    width: 100%;
+    border-collapse: collapse;
+  }
 
-td {
-  padding: 20px;
-  vertical-align: top;
-}
-
-h1 {
-  text-align: center;
-}
-
-.form-column,
-.text-column,
-.gewinnspiel-image {
-  width: 100%;
-}
-
-@media (min-width: 768px) {
-  table {
-    width: 50%;
-    margin: 0 auto;
+  td {
+    padding: 20px;
+    vertical-align: top;
   }
 
   .form-column,
-  .text-column {
+  .text-column,
+  .gewinnspiel-image {
     width: 50%;
   }
 
-  .gewinnspiel-image {
-    width: 100%;
+  .gewinnspiel-image img {
+    max-width: 100%;
+    height: auto;
   }
-}
+
+  @media (max-width: 768px) {
+    .form-column,
+    .text-column,
+    .gewinnspiel-image {
+      width: 100%;
+    }
+  }
 
 
