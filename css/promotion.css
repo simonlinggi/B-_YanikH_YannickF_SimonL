@@ -46,13 +46,13 @@ input[type="submit"] {
 }
 
 .form-column {
-  flex: 0 0 100%;
+  flex: 1;
   padding: 20px;
   box-sizing: border-box;
 }
 
 .text-column {
-  flex: 0 0 100%;
+  flex: 1;
   padding: 20px;
   box-sizing: border-box;
 }
@@ -67,5 +67,18 @@ input[type="submit"] {
   max-width: 100%;
   height: auto;
 }
+
+@media (min-width: 768px) {
+  .text-column {
+    flex: 2;
+    width: 50%;
+  }
+
+  .gewinnspiel-image {
+    flex: 2;
+    width: 50%;
+  }
+}
+
 
 
