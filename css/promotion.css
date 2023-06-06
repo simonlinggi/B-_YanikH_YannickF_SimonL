@@ -58,9 +58,14 @@ input[type="submit"] {
 }
 
 .gewinnspiel-image {
-  flex: 1;
+  flex: 0 0 100%;
   padding: 20px;
   box-sizing: border-box;
+}
+
+.gewinnspiel-image img {
+  max-width: 100%;
+  height: auto;
 }
 
 @media (min-width: 768px) {
@@ -74,3 +79,4 @@ input[type="submit"] {
     width: 50%;
   }
 }
+
