@@ -25,8 +25,8 @@ const onChangeEmailField = () => {
 const onClickSubmit = async () => {
   // Daten aus dem Formular für die Datenbank bereitstellen
   const data = {
-    group: "teacher", // SQL Gruppen Namen
-    pw: "02bd77f9", // SQL Passwort
+    group: "b7", // SQL Gruppen Namen
+    pw: "2a781718", // SQL Passwort
     tableName: "user", // Name der Tabelle in der SQL Datenbank
 
     columns: {
