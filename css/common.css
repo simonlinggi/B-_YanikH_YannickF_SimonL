@@ -28,11 +28,18 @@
    }
 
 
-.logo{
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #EA8500;
+  height: 150px;
+  padding: 20px;
+}
+
+.logo {
   width: 10%;
   height: auto;
-  margin: 5px;
-  margin-left: 80%
 }
 
 .nav {
@@ -44,26 +51,25 @@ nav ul {
   list-style: none;
   padding: 0;
   margin: 0;
-  text-align: center;
 }
 
 nav ul li {
-  display: inline-block;
   margin-right: 10px;
 }
 
 nav ul li:first-child {
   margin-right: 0;
-  text-decoration: none;
 }
 
 nav ul li a {
   text-decoration: none;
+  font-weight: bold;
 }
 
 nav ul li a:hover {
-  font-weight: bold; 
+  font-weight: normal;
 }
+
 
 h1{
   font-family: 'Roboto', sans-serif;
@@ -88,14 +94,6 @@ p{
   font-weight: 300;
 }
 
-.header {
-  background-color: #EA8500;
-  top: 0;
-  height: 150px;
-  width: 100%;
-  padding: 20px;
-
-}
 
 .content {
   flex-grow: 1;
