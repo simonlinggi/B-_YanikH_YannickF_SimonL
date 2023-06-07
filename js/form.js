@@ -15,6 +15,10 @@ nameField.addEventListener("keyup", () => {
   onChangeNameField();
 });
 
+emailField.addEventListener("keyup", () => {
+  onChangeEmailField();
+});
+
 phoneField.addEventListener("keyup", () => {
   onChangePhoneField();
 });
@@ -31,10 +35,6 @@ answerField.addEventListener("keyup", () => {
   onChangeAnswerField();
 });
 
-emailField.addEventListener("keyup", () => {
-  onChangeEmailField();
-});
-
 submitButton.addEventListener("click", async (event) => {
   event.preventDefault();
   onClickSubmit();
@@ -42,12 +42,53 @@ submitButton.addEventListener("click", async (event) => {
 
 // (3) Interaktionen Code
 const onChangeEmailField = () => {
+  if (nameField.value === "") {
+    submitButton.disabled = true;
+  } else {
+    submitButton.disabled = false;
+  }
+};
+
+const onChangeEmailField = () => {
   if (emailField.value === "") {
     submitButton.disabled = true;
   } else {
     submitButton.disabled = false;
   }
 };
+
+const onChangeEmailField = () => {
+  if (phoneField.value === "") {
+    submitButton.disabled = true;
+  } else {
+    submitButton.disabled = false;
+  }
+};
+
+const onChangeEmailField = () => {
+  if (adresseField.value === "") {
+    submitButton.disabled = true;
+  } else {
+    submitButton.disabled = false;
+  }
+};
+
+const onChangeEmailField = () => {
+  if (plzField.value === "") {
+    submitButton.disabled = true;
+  } else {
+    submitButton.disabled = false;
+  }
+};
+
+const onChangeEmailField = () => {
+  if (answerField.value === "") {
+    submitButton.disabled = true;
+  } else {
+    submitButton.disabled = false;
+  }
+};
+
 const onClickSubmit = async () => {
   // Daten aus dem Formular für die Datenbank bereitstellen
   const data = {
@@ -58,7 +99,12 @@ const onClickSubmit = async () => {
     columns: {
       // "email" Name der Spalte in der SQL Tabelle
       // "emailField.value" Eingabe des Benutzers aus dem Formularfeld
+      name: nameField.value,
       email: emailField.value,
+      telefon: phoneField.value,
+      adresse: adresseField.value,
+      plz: plzField.value,
+      kommentar: answerField.value
     },
   };
   // Speichert die Daten in der Datenbank
