@@ -12,27 +12,27 @@ const answerField = document.getElementById("answer");
 
 // (2) Interaktionen festlegen
 nameField.addEventListener("keyup", () => {
-  onChangeNameField();
+  validateForm();
 });
 
 emailField.addEventListener("keyup", () => {
-  onChangeEmailField();
+  validateForm();
 });
 
 phoneField.addEventListener("keyup", () => {
-  onChangePhoneField();
+  validateForm();
 });
 
 adresseField.addEventListener("keyup", () => {
-  onChangeAdresseField();
+  validateForm();
 });
 
 plzField.addEventListener("keyup", () => {
-  onChangePLZField();
+  validateForm();
 });
 
 answerField.addEventListener("keyup", () => {
-  onChangeAnswerField();
+  validateForm();
 });
 
 submitButton.addEventListener("click", async (event) => {
@@ -41,7 +41,7 @@ submitButton.addEventListener("click", async (event) => {
 });
 
 // (3) Interaktionen Code
-const onChangeEmailField = () => {
+const validateForm = () => {
   if (nameField.value === "") {
     submitButton.disabled = true;
   } else {
@@ -49,45 +49,6 @@ const onChangeEmailField = () => {
   }
 };
 
-const onChangeEmailField = () => {
-  if (emailField.value === "") {
-    submitButton.disabled = true;
-  } else {
-    submitButton.disabled = false;
-  }
-};
-
-const onChangeEmailField = () => {
-  if (phoneField.value === "") {
-    submitButton.disabled = true;
-  } else {
-    submitButton.disabled = false;
-  }
-};
-
-const onChangeEmailField = () => {
-  if (adresseField.value === "") {
-    submitButton.disabled = true;
-  } else {
-    submitButton.disabled = false;
-  }
-};
-
-const onChangeEmailField = () => {
-  if (plzField.value === "") {
-    submitButton.disabled = true;
-  } else {
-    submitButton.disabled = false;
-  }
-};
-
-const onChangeEmailField = () => {
-  if (answerField.value === "") {
-    submitButton.disabled = true;
-  } else {
-    submitButton.disabled = false;
-  }
-};
 
 const onClickSubmit = async () => {
   // Daten aus dem Formular für die Datenbank bereitstellen
