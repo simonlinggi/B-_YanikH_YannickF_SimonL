@@ -119,8 +119,7 @@ p{
 }
 
 .footer-icons {
-  display: flex;
-  justify-content: center;
+  display: inline-block;
 }
 
 .footer-icons a {
