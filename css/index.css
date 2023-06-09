@@ -41,22 +41,26 @@
 }
 
 .teaser {
-  display: flex;
-  margin: 5%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
 }
 
 .teaser .column {
-  flex: 1;
-  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
 }
 
 .teaser .column p {
-  margin-right: 20px;
+  margin-bottom: 20px;
 }
 
 .teaser .column .button {
-  margin-top: 10px;
+  align-self: flex-start;
 }
+
    
 .ueber_uns{
       margin-top: 5%;
