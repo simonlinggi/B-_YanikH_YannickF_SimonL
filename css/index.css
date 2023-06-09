@@ -40,10 +40,23 @@
   font-size: 16px;
 }
 
-.teaser{
-      display: flex;
-      margin: 5%;
-      }
+.teaser {
+  display: flex;
+  margin: 5%;
+}
+
+.teaser .column {
+  flex: 1;
+  padding: 10px;
+}
+
+.teaser .column p {
+  margin-right: 20px;
+}
+
+.teaser .column .button {
+  margin-top: 10px;
+}
    
 .ueber_uns{
       margin-top: 5%;
