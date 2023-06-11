@@ -46,7 +46,8 @@
   background-color: #EA8500;
   height: 150px;
   width: 100vw;
-  padding: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   font-family: Roboto, sans-serif;
 }
 
