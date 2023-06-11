@@ -28,8 +28,8 @@
 /* Elemente im Spiel */
 #game-background {
     position: absolute;
-    width: 600px;
-    height: 300px;
+    width: 900px;
+    height: auto;
     background-image: url("../images/background_foreign_whips.png");
     background-size: cover;
 }
