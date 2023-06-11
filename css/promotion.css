@@ -14,7 +14,8 @@
 }
 
 .submit {
-  font-size: 1.6rem #ea8500;
+  font-color: #ea8500;
+  font-size: 1.6rem;
   background-color: #ffffff;
   border-radius: 8px;
   border: 2px solid #ea8500;
@@ -26,7 +27,7 @@
 .submit:hover {
   background-color: #ea8500;
   border: #fffff;
-  font-size: #ffffff;
+  font-color: #ffffff;
 }
 
 .form-input {
