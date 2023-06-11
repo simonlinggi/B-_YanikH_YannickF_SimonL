@@ -84,3 +84,4 @@ const startGameLoop = () => {
     }
   }, 50);
 };
+
