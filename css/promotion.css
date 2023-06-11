@@ -14,26 +14,6 @@
   padding: 6.4rem;
 }
 
-.first-name-container,
-.adress-container,
-.phone-container {
-  grid-column: 1 / 7;
-}
-
-.last-name-container,
-.plz-container {
-  grid-column: 8 / -1;
-}
-
-.email-container {
-  grid-column: 1 / 9;
-}
-
-.comment-container {
-  grid-column: 10 / -1;
-}
-
-
 .submit {
   font-size: 2.4rem;
   background-color: #e7eaa6;
