@@ -49,6 +49,7 @@
   justify-content: center;
   align-items: center;
   margin-left: 2rem;
+  margin-right: 2rem;
 }
 
 .image {
@@ -59,4 +60,5 @@
 .signature {
   font-size: 1.4rem;
   text-align: center;
+  margin-right: 2rem;
 }
