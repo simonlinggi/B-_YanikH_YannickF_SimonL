@@ -115,9 +115,10 @@ p{
 
  
 .footer-basic {
+  width: 100%;
   padding:40px 0;
   background-color:#ea8500;
-  color:#4b4c4d;
+  color:#fffff;
 }
 
 .footer-basic ul {
