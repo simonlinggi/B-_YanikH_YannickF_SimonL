@@ -135,11 +135,7 @@ p{
   padding:0 10px;
 }
 
-.footer-basic ul a {
-  color:inherit;
-  text-decoration:none;
-  opacity:0.8;
-}
+
 
 .footer-basic ul a:hover {
   opacity:1;
@@ -154,7 +150,7 @@ p{
 .footer-basic .footer-icons > a {
   display: flex;
   align-items: center; 
-  margin: 0 10px; 
+  margin:0 10px; 
 
 }
 
