@@ -14,17 +14,19 @@
 }
 
 .submit {
-  font-size: 1.6rem;
-  background-color: #e7eaa6;
+  font-size: 1.6rem #ea8500;
+  background-color: #ffffff;
   border-radius: 8px;
-  border: 2px solid #ddd;
+  border: 2px solid #ea8500;
   padding: 0.8rem 1.6rem;
   grid-column: 1 / span 2;
   transition: background-color 0.3s ease;
 }
 
 .submit:hover {
-  background-color: #d4d793;
+  background-color: #ea8500;
+  border: #fffff;
+  font-size: #ffffff;
 }
 
 .form-input {
