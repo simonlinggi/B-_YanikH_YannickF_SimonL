@@ -29,7 +29,7 @@
 #game-background {
     position: absolute;
     width: 900px;
-    height: auto;
+    height: 600px;
     background-image: url("../images/background_foreign_whips.png");
     background-size: cover;
 }
@@ -49,8 +49,8 @@
 }
 
 #game-dino {
-    height: 75px;
-    width: 75px;
+    height: 100px;
+    width: 100px;
     top: 225px;
     position: relative;
     background-image: url("../images/car.png");
