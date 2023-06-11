@@ -113,10 +113,7 @@ p{
   max-width: 70%;
 }
 
- .footer {
-  width: 100%;
-  background-color: #ea8500;
-}
+ 
 
 .footer-icons {
 display: flex;
@@ -135,7 +132,4 @@ display: flex;
   height: 40px; 
 }
 
-.footer-text {
-     font-family: Roboto, sans-serif;
-     color: white;
-}
+
