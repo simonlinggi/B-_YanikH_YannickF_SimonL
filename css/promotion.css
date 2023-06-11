@@ -10,6 +10,7 @@
   gap: 1.6rem;
   border: 1px solid #000;
   padding: 2.4rem;
+  border-radius: 8px;
 }
 
 .submit {
@@ -19,6 +20,11 @@
   border: 2px solid #ddd;
   padding: 0.8rem 1.6rem;
   grid-column: 1 / span 2;
+  transition: background-color 0.3s ease;
+}
+
+.submit:hover {
+  background-color: #d4d793;
 }
 
 .form-input {
@@ -27,4 +33,5 @@
   border: 2px solid #ddd;
   padding: 0.4rem 0.8rem;
   width: 100%;
+  border-radius: 4px;
 }
