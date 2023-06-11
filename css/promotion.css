@@ -37,3 +37,18 @@
   width: 100%;
   border-radius: 4px;
 }
+
+.image-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.image {
+  max-width: 20rem;
+  margin-bottom: 1rem;
+}
+
+.signature {
+  font-size: 1.4rem;
+  text-align: center;
+}
