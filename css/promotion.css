@@ -1,98 +1,55 @@
+
 .container {
   display: flex;
   justify-content: center;
-  align-items: center;
-  height: 100vh;
 }
 
-.form-column {
-  background-color: #ffffff;
-  padding: 30px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  max-width: 400px;
-  margin: 0 auto;
+.form {
+  width: 160rem;
+  display: grid;
+  grid-template-columns: repeat(13, 1fr);
+  justify-content: center;
+  row-gap: 4.8rem;
+  border: 1px solid #000;
+  padding: 6.4rem;
 }
 
-h1 {
-  text-align: center;
-  margin-bottom: 20px;
+.first-name-container,
+.adress-container,
+.phone-container {
+  grid-column: 1 / 7;
 }
 
-.form label {
-  display: block;
-  margin-bottom: 10px;
-  font-weight: bold;
-  color: #333333;
+.last-name-container,
+.plz-container {
+  grid-column: 8 / -1;
 }
 
-.form input[type="text"],
-.form input[type="email"],
-.form input[type="tel"],
-.form textarea {
+.email-container {
+  grid-column: 1 / 9;
+}
+
+.comment-container {
+  grid-column: 10 / -1;
+}
+
+
+.submit {
+  font-size: 2.4rem;
+  background-color: #e7eaa6;
+  border-radius: 8px;
+  border: 2px solid #ddd;
+  padding: 1.2rem 2.4rem;
+  grid-column: 6 / 9;
+}
+
+.form-input {
+  font-size: 2.4rem;
+  height: 8rem;
+  border: 2px solid #ddd;
+  padding: 0.8rem 1.6rem;
   width: 100%;
-  padding: 12px;
-  margin-bottom: 20px;
-  border: 1px solid #cccccc;
-  border-radius: 4px;
-}
-
-.form input[type="text"]:focus,
-.form input[type="email"]:focus,
-.form input[type="tel"]:focus,
-.form textarea:focus {
-  border-color: #7c7c7c;
-}
-
-.form input[type="submit"] {
-  background-color: #4CAF50;
-  color: #ffffff;
-  padding: 12px 24px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.form input[type="submit"]:hover {
-  background-color: #45a049;
 }
 
 
 
-
-
-.form-column {
-  flex: 1;
-  padding: 20px;
-  box-sizing: border-box;
-}
-
-.text-column {
-  flex: 1;
-  padding: 20px;
-  box-sizing: border-box;
-}
-
-.gewinnspiel-image {
-  flex: 0 0 100%;
-  padding: 20px;
-  box-sizing: border-box;
-}
-
-.gewinnspiel-image img {
-  max-width: 100%;
-  height: auto;
-}
-
-@media (min-width: 768px) {
-  .text-column {
-    flex: 2;
-    width: 50%;
-  }
-
-  .gewinnspiel-image {
-    flex: 2;
-    width: 50%;
-  }
-}
