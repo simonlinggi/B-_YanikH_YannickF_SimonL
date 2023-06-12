@@ -121,8 +121,9 @@ p{
   max-width: 70%;
 }
 
-
 .button {
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
   color: #ea8500;
   font-size: 1.6rem;
   background-color: #FFFFFF;
@@ -137,7 +138,7 @@ p{
   background-color: #ea8500;
   color: #FFFFFF;
 }
- 
+
 .footer-basic {
   width: 100%;
   padding:40px 0;
