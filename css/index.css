@@ -60,6 +60,7 @@
   .product_pic{
       width: 45%;
       height: auto;
+      border-radius: 8px;
   }
 
 
