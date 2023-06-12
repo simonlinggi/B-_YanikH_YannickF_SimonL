@@ -121,6 +121,22 @@ p{
   max-width: 70%;
 }
 
+
+.button {
+  color: #ea8500;
+  font-size: 1.6rem;
+  background-color: #FFFFFF;
+  border-radius: 8px;
+  border: 2px solid #ea8500;
+  padding: 0.8rem 1.6rem;
+  grid-column: 1 / span 2;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #ea8500;
+  color: #FFFFFF;
+}
  
 .footer-basic {
   width: 100%;
