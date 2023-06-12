@@ -1,15 +1,4 @@
 
-
-.inhalt {
-
-      background-color: #f2f2f2;
-      padding: 20px;
-      box-sizing: border-box;
-      display: flex;
-      flex-direction: column;
-    }
-
-
 .column {
       flex: 1;
       padding: 10px;
