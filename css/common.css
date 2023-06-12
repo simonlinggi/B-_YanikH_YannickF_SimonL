@@ -13,6 +13,12 @@
      width:100%;
 }
 
+@font-face {
+    font-family: "MeineSchriftart";
+    src: url("images/Termina-W00-Heavy.ttf") format("truetype");
+}
+
+
 .nav-link-home {
      color:white;
 }
