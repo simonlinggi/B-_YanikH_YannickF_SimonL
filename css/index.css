@@ -7,7 +7,19 @@
 .column img {
       width: 100%;
       height: auto;
+      border-radius: 10px;
+      position: relative;
     }
+
+.column img:hover {
+      opacity: 0.7;
+      content: "Gefällt dir dieses Auto? Dann kontaktiere uns unter foreignwhips@gmail.com";
+      color: black;
+    }
+
+.column img:hover::after {
+      
+  }    
 
 .row {
       display: flex;
@@ -29,38 +41,12 @@
   font-size: 16px;
 }
 
-.teaser {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 20px;
-}
 
-.teaser .column {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-}
-
-.teaser .column p {
-  margin-bottom: 20px;
-}
-
-.teaser .column .button {
-  align-self: flex-start;
-}
 
    
 .ueber_uns{
-      margin-top: 5%;
+      margin-top: 15%;
       margin-bottom: 5%;
 }
-
-
-  .product_pic{
-      width: 45%;
-      height: auto;
-      border-radius: 8px;
-  }
 
 
