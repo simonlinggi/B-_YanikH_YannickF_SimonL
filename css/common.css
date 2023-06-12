@@ -94,6 +94,7 @@ nav ul li a:hover {
 h1{
   font-family: "Termina", sans-serif;
   font-size: 2em;
+  text-transform: uppercase;
 }
 
 .titel{
@@ -104,7 +105,7 @@ h1{
 h3{
   font-family: "Termina", sans-serif;
   font-size: 2em;
-  
+  text-transform: uppercase;
 }
 
 p{
