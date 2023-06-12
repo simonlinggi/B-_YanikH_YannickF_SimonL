@@ -13,13 +13,11 @@
 
 .column img:hover {
       opacity: 0.7;
-      content: "Gefällt dir dieses Auto? Dann kontaktiere uns unter foreignwhips@gmail.com";
-      color: black;
+     
+     
     }
 
-.column img:hover::after {
-      
-  }    
+ 
 
 .row {
       display: flex;
@@ -42,6 +40,14 @@
 }
 
 
+.teaser {
+  display: flex;
+  margin-bottom: 1%;
+}
+
+.teaser-text{
+  margin-bottom: 5%;
+}
 
    
 .ueber_uns{
