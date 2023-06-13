@@ -1,17 +1,19 @@
 // (1) Variablen initialisieren
-const formContainer = document.getElementById("formContainer");
-const gameContainer = document.getElementById("game-container");
-const submitButton = document.getElementById("submit");
+const firstNameField = document.getElementById("firstnameField");
+const lastNameField = document.getElementById("lastnameField");
+const emailField = document.getElementById("emailField");
+const phoneField = document.getElementById("phoneField");
+const addressField = document.getElementById("addressField");
+const plzField = document.getElementById("plzField");
+const submitButton = document.getElementById("submitButton");
 submitButton.disabled = true;
-const nameField = document.getElementById("name");
-const emailField = document.getElementById("email");
-const phoneField = document.getElementById("phone");
-const adresseField = document.getElementById("adresse");
-const plzField = document.getElementById("plz");
-const answerField = document.getElementById("answer");
 
 // (2) Interaktionen festlegen
-nameField.addEventListener("keyup", () => {
+firstNameField.addEventListener("keyup", () => {
+  validateForm();
+});
+
+lastNameField.addEventListener("keyup", () => {
   validateForm();
 });
 
@@ -23,15 +25,11 @@ phoneField.addEventListener("keyup", () => {
   validateForm();
 });
 
-adresseField.addEventListener("keyup", () => {
+addressField.addEventListener("keyup", () => {
   validateForm();
 });
 
 plzField.addEventListener("keyup", () => {
-  validateForm();
-});
-
-answerField.addEventListener("keyup", () => {
   validateForm();
 });
 
@@ -42,13 +40,19 @@ submitButton.addEventListener("click", async (event) => {
 
 // (3) Interaktionen Code
 const validateForm = () => {
-  if (nameField.value === "") {
+  if (
+    firstNameField.value === "" ||
+    lastNameField.value === "" ||
+    emailField.value === "" ||
+    phoneField.value === "" ||
+    addressField.value === "" ||
+    plzField.value === ""
+  ) {
     submitButton.disabled = true;
   } else {
     submitButton.disabled = false;
   }
 };
-
 
 const onClickSubmit = async () => {
   // Daten aus dem Formular für die Datenbank bereitstellen
@@ -60,18 +64,32 @@ const onClickSubmit = async () => {
     columns: {
       // "email" Name der Spalte in der SQL Tabelle
       // "emailField.value" Eingabe des Benutzers aus dem Formularfeld
-      name: nameField.value,
+      firstname: firstNameField.value,
+      lastname: lastNameField.value,
       email: emailField.value,
-      telefon: phoneField.value,
-      adresse: adresseField.value,
-      plz: plzField.value,
-      kommentar: answerField.value
+      phone: phoneField.value,
+      address: addressField.value,
+      plz: plzField.value
     },
   };
-  // Speichert die Daten in der Datenbank
-  await databaseClient.insertInto(data);
 
-  // Nach dem Speichern verschwindet das Formular, das Game erscheint
-  formContainer.classList.add("hidden");
-  gameContainer.classList.remove("hidden");
+  const formFields = Object.values(data.columns);
+  const isFormValid = formFields.every((field) => field.trim() !== '');
+
+  if (isFormValid) {
+    try {
+      // Speichert die Daten in der Datenbank
+      await databaseClient.insertInto(data);
+
+      // Formular absenden
+      const form = document.querySelector('.form');
+      form.submit();
+
+    } catch (error) {
+      console.error("Fehler bei der Datenbank: ", error);
+    }
+  } else {
+    // Zeige eine Fehlermeldung oder führe andere Aktionen aus, um den Benutzer über das leere Formular zu informieren
+    console.log('Bitte fülle alle Felder aus.');
+  }
 };
