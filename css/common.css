@@ -121,7 +121,7 @@ p{
   max-width: 70%;
 }
 
-.button {
+.submitButton {
   text-decoration: none;
   font-family: 'Roboto', sans-serif;
   color: #ea8500;
@@ -135,9 +135,16 @@ p{
   transition: background-color 0.3s ease;
 }
 
-.button:hover {
+.submitButton:hover {
   background-color: #ea8500;
   color: #FFFFFF;
+}
+
+input.submitButton:disabled {
+  background-color: #CCCCCC;
+  border-color: #CCCCCC;
+  color: #888888;
+  cursor: not-allowed;
 }
 
 .footer-basic {
