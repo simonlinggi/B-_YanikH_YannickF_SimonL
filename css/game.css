@@ -12,10 +12,13 @@
      
      height: 100vh;
      width:100%;
-}
+     background: rgb(255,255,255);
+    background: radial-gradient(circle, rgba(255,255,255,1) 45%, rgba(234,133,0,1) 100%);}
 
 .hidden {
     display: none;
+    font-family: "Termina", sans-serif;
+
 }
 
 /* Spiel-Container mit Beschreibung und Game-Over Text */
@@ -35,8 +38,10 @@
 }
 
 .game-info {
-    margin-top: 12px;
-    margin-bottom: 12px;
+    margin-top: 8%;
+    margin-bottom: 8%;
+    font-family: "Termina", sans-serif;
+    text-align: center;
 }
 
 #game-end {
@@ -142,6 +147,9 @@
     transform: translateY(-50%);
     text-align: center;
     color: white;
+    font-family: "Termina", sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
 #game-score {
@@ -149,4 +157,13 @@
     top: 0;
     right: 0;
     margin: 12px;
+    font-family: "Termina", sans-serif;
+    font-weight: bold;
+    color: white;
+}
+
+#game-winner{
+    font-family: "Termina", sans-serif;
+    text-align: center;
+    margin-top: 5%;
 }
