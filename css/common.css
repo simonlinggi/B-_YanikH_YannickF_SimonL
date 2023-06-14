@@ -4,10 +4,10 @@
      margin: 0;
      padding: 0;
      display: flex;
-    flex-direction: column;
+     flex-direction: column;
     /* min-height: bewirkt, dass der Footer zuunterst ist. */
-  min-height: 100vh;
-  /* padding, margin: 0: bewirkt, dass es mit 100vh zuunterist */
+    min-height: 100vh;
+    /* padding, margin: 0: bewirkt, dass es mit 100vh zuunterist */
      align-items: center;
      height: 100vh;
      width:100%;
@@ -50,7 +50,7 @@
   align-items: center;
   justify-content: space-between;
   background-color: #EA8500;
-  width: 100vw;
+  width: 100%;
   padding-top: 20px;
   padding-bottom: 20px;
   font-family: Roboto, sans-serif;
