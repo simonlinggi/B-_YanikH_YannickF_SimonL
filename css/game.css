@@ -1,19 +1,36 @@
-* Spiel-Container mit Beschreibung und Game-Over Text */
+/* CSS Code, den es für die Promotion Page braucht */
+
+/* Hilfsklasse */
+.webpage-game {
+     margin: 0;
+     padding: 0;
+     display: flex;
+     flex-direction: column;
+    /* min-height: bewirkt, dass der Footer zuunterst ist. */
+    min-height: 100vh;
+    /* padding, margin: 0: bewirkt, dass es mit 100vh zuunterist */
+     
+     height: 100vh;
+     width:100%;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Spiel-Container mit Beschreibung und Game-Over Text */
 .content-game {
     min-height: 600px;
 }
 
 #game-container {
-    max-width: 1500px;
+    max-width: 600px;
     margin: auto;
 }
 
 #game {
     position: relative;
-    margin-top: 2%;
-    left: 0%;
-    height: 700px;
-    width: 1300px;
+    height: 300px;
     cursor: pointer;
 }
 
@@ -31,9 +48,9 @@
 /* Elemente im Spiel */
 #game-background {
     position: absolute;
-    width: 100%;
-    height: 100%;
-    background-image: url("../images/background_foreign_whips.png");
+    width: 600px;
+    height: 300px;
+    background-image: url("../images/background.png");
     background-size: cover;
 }
 
@@ -53,10 +70,10 @@
 
 #game-dino {
     height: 75px;
-    width: 225px;
-    top: 615px;
+    width: 75px;
+    top: 225px;
     position: relative;
-    background-image: url("../images/car.png");
+    background-image: url("../images/dino.png");
     background-size: cover;
 }
 
@@ -65,12 +82,12 @@
 }
 
 #game-rock {
-    width: 45px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     position: relative;
-    top: 555px;
-    left: 1150px;
-    background-image: url("../images/nagel.png");
+    top: 175px;
+    left: 550px;
+    background-image: url("../images/rock.png");
     background-size: cover;
 }
 
@@ -116,7 +133,7 @@
     height: 100%;
     z-index: 999;
     opacity: 0.7;
-    background: black;
+    background: black
 }
 
 .startScreenText {
@@ -125,8 +142,6 @@
     transform: translateY(-50%);
     text-align: center;
     color: white;
-    font-family: 'Segoe UI', sans-serif;
-    font-weight: bold;
 }
 
 #game-score {
@@ -134,7 +149,4 @@
     top: 0;
     right: 0;
     margin: 12px;
-    color: white;
-    font-family: 'Segoe UI', sans-serif;
-    font-weight: bold;
 }
