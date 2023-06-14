@@ -1,6 +1,7 @@
-/* CSS Code, der für alle Web Pages gleich ist */
+/* CSS Code, den es für die Promotion Page braucht */
 
-.webpage {
+/* Hilfsklasse */
+.webpage-game {
      margin: 0;
      padding: 0;
      display: flex;
@@ -8,239 +9,174 @@
     /* min-height: bewirkt, dass der Footer zuunterst ist. */
     min-height: 100vh;
     /* padding, margin: 0: bewirkt, dass es mit 100vh zuunterist */
-     align-items: center;
+     
      height: 100vh;
      width:100%;
-}
+     background: rgb(255,255,255);
+    background: radial-gradient(circle, rgba(255,255,255,1) 45%, rgba(234,133,0,1) 100%);}
 
-@font-face {
-    font-family: "Termina";
-    src: url("images/Termina-W00-Heavy.ttf") format("truetype");
-}
-
-
-.nav-link-home {
-     color:white;
-}
-
-.nav-link-promotion {
-     color:white;
-}
-
-.nav-link-game {
-     color:white;
-}
-
-
-
-.header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color: #EA8500;
-  width: 100%;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  font-family: Roboto, sans-serif;
-}
-
-.logo {
-  width: 10%;
-  margin-left: 10vw;
-  height: auto;
-}
-
-.nav {
-  display: flex;
-  align-items: center;
-  font-size: 1.5em;
-}
-
-nav ul {
-  display: flex;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-nav ul li {
-  margin-right: 40px;
-  
-}
-
-nav ul li a {
-  color:inherit;
-  text-decoration:none;
-  opacity:0.8;
-}
-
-nav ul li a:hover {
-  opacity:1;
-}
-
-
-
-
-h1{
-  font-family: "Termina", sans-serif;
-  font-size: 2em;
-  text-transform: uppercase;
-}
-
-
-h3{
-  font-family: "Termina", sans-serif;
-  font-size: 2em;
-  text-transform: uppercase;
-}
-
-p{
-  font-family: 'Roboto', sans-serif;
-  font-size: 1.1em;
-  font-weight: 300;
-  margin-bottom: 3%;
-}
-
-
-.content {
-  flex-grow: 1;
-  background-color: #ffffff;
-  max-width: 70%;
-}
-
-.submitButton {
-  text-decoration: none;
-  font-family: 'Roboto', sans-serif;
-  color: #ea8500;
-  font-size: 1.6rem;
-  background-color: #FFFFFF;
-  border-radius: 8px;
-  border: 2px solid #ea8500;
-  padding: 0.8rem 1.6rem;
-  
-  grid-column: 1 / span 2;
-  transition: background-color 0.3s ease;
-}
-
-.submitButton:hover {
-  background-color: #ea8500;
-  color: #FFFFFF;
-}
-
-input.submitButton:disabled {
-  background-color: #CCCCCC;
-  border-color: #CCCCCC;
-  color: #888888;
-  cursor: not-allowed;
-}
-
-.footer-basic {
-  width: 100%;
-  padding:40px 0;
-  background-color:#ea8500;
-  color:#FFFFFF;
-  font-family: 'Roboto', sans-serif;
-  
-}
-
-.footer-basic ul {
-  padding:0;
-  list-style:none;
-  text-align:center;
-  font-size:18px;
-  line-height:1.6;
-  margin-bottom:0;
-}
-
-.footer-basic li {
-  padding:0 10px;
-}
-
-.footer-basic ul a {
-  color:inherit;
-  text-decoration:none;
-  opacity:0.8;
-}
-
-
-.footer-basic ul a:hover {
-  opacity:1;
-}
-
-.footer-icons {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.footer-icons a {
-  display: flex;
-  align-items: center; 
-  margin:0 20px; 
+.hidden {
+    display: none;
+    font-family: "Termina", sans-serif;
 
 }
 
-.footer-icons img {
-    width: 40px; 
-    height: 40px; 
+/* Spiel-Container mit Beschreibung und Game-Over Text */
+.content-game {
+    min-height: 600px;
+}
+
+#game-container {
+    max-width: 600px;
+    margin: auto;
+}
+
+#game {
+    position: relative;
+    height: 300px;
+    cursor: pointer;
+}
+
+.game-info {
+    margin-top: 8%;
+    margin-bottom: 8%;
+    font-family: "Termina", sans-serif;
+    text-align: center;
+}
+
+#game-end {
+    margin-top: 12px;
+    margin-bottom: 12px;
 }
 
 
-.copyright {
-  margin-top:15px;
-  text-align:center;
-  font-size:13px;
-  color:#C4C4CC;
-  margin-bottom:0;
+/* Elemente im Spiel */
+#game-background {
+    position: absolute;
+    width: 600px;
+    height: 300px;
+    background-image: url("../images/background.png");
+    background-size: cover;
+}
+
+.bg-animation {
+    animation: moveBg 10.33s linear infinite;
+}
+
+@keyframes moveBg {
+    0% {
+        background-position: 0 0;
+    }
+
+    100% {
+        background-position: -600px 0;
+    }
+}
+
+#game-dino {
+    height: 75px;
+    width: 75px;
+    top: 225px;
+    position: relative;
+    background-image: url("../images/dino.png");
+    background-size: cover;
+}
+
+.dino-dies {
+    background-color: red;
+}
+
+#game-rock {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    top: 175px;
+    left: 550px;
+    background-image: url("../images/rock.png");
+    background-size: cover;
+}
+
+.rock-animation {
+    animation: rock 1.33s infinite;
+}
+
+@keyframes rock {
+    0% {
+        left: 550px;
+    }
+
+    100% {
+        left: -50px;
+    }
+}
+
+.jump-animation {
+    animation: jump 0.5s;
+}
+
+@keyframes jump {
+    0% {
+        top: 225px;
+    }
+
+    50% {
+        top: 75px;
+    }
+
+    75% {
+        top: 75px;
+    }
+
+    100% {
+        top: 225px;
+    }
+}
+
+#game-start {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    opacity: 0.7;
+    background: black
+}
+
+.startScreenText {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: white;
+    font-family: "Termina", sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#game-score {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 12px;
+    font-family: "Termina", sans-serif;
+    font-weight: bold;
+    color: white;
+}
+
+#game-winner{
+    font-family: "Termina", sans-serif;
+    text-align: center;
+    margin-top: 5%;
 }
 
 
 @media only screen and (max-width: 700px) {
-  
-  .logo {
-    width: 17%;
-    margin-left: 10vw;
-    height: auto;
-  }
-  
-  .nav {
-    
-    font-size: 0.8em;
-  }
-
-  nav ul li {
-    margin-right: 20px;
-    
-  }
-
-  .submitButton {
-    font-size: 1rem;
-    
-  }
+ 
+    .game-info {
+        font-size: 0.7em;
+        padding-right: 5%;
+        padding-left: 5%;
+    }
 
 
-  .content {
-    flex-grow: 1;
-    background-color: #ffffff;
-    max-width: 90%;
-  }
-
-  h1{
-    font-family: "Termina", sans-serif;
-    font-size: 1.3em;
-    text-transform: uppercase;
-  }
-  
-  
-  h3{
-    font-family: "Termina", sans-serif;
-    font-size: 1.3em;
-    text-transform: uppercase;
-  }
-
-  .footer-icons img {
-    width: 30px; 
-    height: 30px; 
-}
 
 }
