@@ -199,7 +199,7 @@ input.submitButton:disabled {
   
   .logo {
     width: 17%;
-    margin-left: 10vw;
+    margin-left: 5vw;
     height: auto;
   }
   
@@ -238,6 +238,10 @@ input.submitButton:disabled {
     text-transform: uppercase;
   }
 
+   p{   
+     font-size: 0.9em;
+  }
+     
   .footer-icons img {
     width: 30px; 
     height: 30px; 
