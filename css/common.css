@@ -196,97 +196,62 @@ input.submitButton:disabled {
 
 @media screen and (max-width: 850px) {
   .logo {
-
     width: 17%;
-    
     margin-left: 5vw;
-    
     height: auto;
-    
     }
     
-    .nav {
-    
+    .nav {  
     font-size: 0.9em;
-    
     }
-    
+   
     nav ul li {
-    
     margin-right: 20px;
-    
     }
     
-    .submitButton {
-    
-    font-size: 1rem;
-    
+    .submitButton {  
+    font-size: 1rem;    
     }
     
-    .content {
-    
-    flex-grow: 1;
-    
-    background-color: #ffffff;
-    
-    max-width: 90%;
-    
+    .content {    
+    flex-grow: 1;    
+    background-color: #ffffff;    
+    max-width: 90%;    
     }
     
-    h1{
-    
-    font-family: "Termina", sans-serif;
-    
-    font-size: 1.1em;
-    
-    text-transform: uppercase;
-    
+    h1{   
+    font-family: "Termina", sans-serif;    
+    font-size: 1.1em;    
+    text-transform: uppercase;    
     }
     
-    h3{
-    
-    font-family: "Termina", sans-serif;
-    
-    font-size: 1.1em;
-    
-    text-transform: uppercase;
-    
+    h3{    
+    font-family: "Termina", sans-serif;    
+    font-size: 1.1em;   
+    text-transform: uppercase;   
     }
     
-    p{
-    
-    font-size: 0.9em;
-    
+    p{    
+    font-size: 0.9em;    
     }
     
-    .footer-icons img {
-    
-    width: 30px;
-    
-    height: 30px;
-    
+    .footer-icons img {    
+    width: 30px;    
+    height: 30px;    
     }
     
-    .row {
-    
-    flex-direction: column;
-    
+    .row {    
+    flex-direction: column;  
     }
     
-    .column-teaser,
-    
+    .column-teaser,   
     .column {
-    
-    width: auto;
-    
+    width: auto; 
     }
     
-    .column-teaser img,
-    
-    .column img {
-    
-    margin-bottom: 10px;
-    
+    .column-teaser img,   
+    .column img {   
+    margin-bottom: 10px;  
     }
 
     .teaser-text{
