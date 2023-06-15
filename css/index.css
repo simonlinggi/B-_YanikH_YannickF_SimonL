@@ -60,7 +60,7 @@
 
    
 .ueber_uns{
-      margin-top: 5%;
+      margin-top: 4%;
       margin-bottom: 5%;
 }
 
@@ -74,6 +74,10 @@
  .row {
     flex-direction: column;
   }
+
+  .teaser-text{
+    mar
+  }
   
   .column-teaser,
   .column {
@@ -85,13 +89,12 @@
     margin-bottom: 10px;
   }
 
-
-}
-
-.column:hover::after {
-  bottom: 8%;
-  left: 2%;
-  width: 96%;
-  font-size: 0.7em; 
+  .column:hover::after {
+    font-size: 0.6em;
+    bottom: 9%;
+    left: 2.5%;
+    text-align: center;
+    width: 95%;
+  }
 
 }

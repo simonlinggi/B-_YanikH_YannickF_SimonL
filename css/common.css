@@ -46,7 +46,7 @@
 
 .logo {
   width: 10%;
-  margin-left: 5%;
+  margin-left: 10vw;
   height: auto;
 }
 
@@ -76,7 +76,6 @@ nav ul li a {
 
 nav ul li a:hover {
   opacity:1;
-  
 }
 
 
@@ -195,15 +194,12 @@ input.submitButton:disabled {
   margin-bottom:0;
 }
 
-
-/* Responsive Design */
 @media screen and (max-width: 850px) {
-
   .logo {
 
     width: 17%;
     
-    
+    margin-left: 5vw;
     
     height: auto;
     
@@ -211,7 +207,7 @@ input.submitButton:disabled {
     
     .nav {
     
-    font-size: 1em;
+    font-size: 0.9em;
     
     }
     
@@ -241,7 +237,7 @@ input.submitButton:disabled {
     
     font-family: "Termina", sans-serif;
     
-    font-size: 1.3em;
+    font-size: 1.1em;
     
     text-transform: uppercase;
     
@@ -251,7 +247,7 @@ input.submitButton:disabled {
     
     font-family: "Termina", sans-serif;
     
-    font-size: 1.3em;
+    font-size: 1.1em;
     
     text-transform: uppercase;
     
@@ -291,6 +287,10 @@ input.submitButton:disabled {
     
     margin-bottom: 10px;
     
+    }
+
+    .teaser-text{
+      margin-top: -5%
     }
 
 }
