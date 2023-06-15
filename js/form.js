@@ -8,6 +8,8 @@ const plzField = document.getElementById("plzField");
 const submitButton = document.getElementById("submitButton");
 submitButton.disabled = true;
 
+const errorContainer = document.querySelector('.error');
+
 // (2) Interaktionen festlegen
 firstNameField.addEventListener("keyup", () => {
   validateForm();
@@ -40,17 +42,26 @@ submitButton.addEventListener("click", async (event) => {
 
 // (3) Interaktionen Code
 const validateForm = () => {
+  const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  const numberPattern = /^[\d+]+$/;
+
   if (
     firstNameField.value === "" ||
     lastNameField.value === "" ||
     emailField.value === "" ||
+      !emailPattern.test(emailField.value) || // E-Mail-Validierung
     phoneField.value === "" ||
+      !numberPattern.test(phoneField.value) ||
     addressField.value === "" ||
-    plzField.value === ""
+    plzField.value === "" ||
+      !numberPattern.test(plzField.value) 
   ) {
-    submitButton.disabled = true;
+   submitButton.disabled = true;
+    submitButton.value = "Formular vermutlich falsch ausgefüllt";
   } else {
     submitButton.disabled = false;
+    submitButton.value = "Am Gewinnspiel teilnehmen";
+    errorContainer.textContent = "";
   }
 };
 
@@ -73,23 +84,15 @@ const onClickSubmit = async () => {
     },
   };
 
-  const formFields = Object.values(data.columns);
-  const isFormValid = formFields.every((field) => field.trim() !== '');
+  try {
+    // Speichert die Daten in der Datenbank
+    await databaseClient.insertInto(data);
 
-  if (isFormValid) {
-    try {
-      // Speichert die Daten in der Datenbank
-      await databaseClient.insertInto(data);
+    // Formular absenden
+    const form = document.querySelector('.form');
+    form.submit();
 
-      // Formular absenden
-      const form = document.querySelector('.form');
-      form.submit();
-
-    } catch (error) {
-      console.error("Fehler bei der Datenbank: ", error);
-    }
-  } else {
-    // Zeige eine Fehlermeldung oder führe andere Aktionen aus, um den Benutzer über das leere Formular zu informieren
-    console.log('Bitte fülle alle Felder aus.');
+  } catch (error) {
+    console.error("Fehler bei der Datenbank: ", error);
   }
 };

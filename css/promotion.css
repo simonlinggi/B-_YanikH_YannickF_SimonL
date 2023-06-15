@@ -49,3 +49,29 @@
   margin-right: 2rem;
 }
 
+
+@media screen and (max-width: 850px) {
+  .container {
+    flex-direction: column;
+  }
+  
+  .form-container {
+    width: 95%;
+    margin-right: 0;
+    margin-bottom: 2rem; /* Abstand vom unteren Rand hinzufügen */
+  }
+  
+  .form {
+    padding: 0rem;
+    margin: 1rem;
+  }
+  
+  .form-input {
+    padding: 0.4rem 0.8rem 0;
+  }
+  
+  .image-container {
+    width: 95%;
+    margin: 1rem;
+  }
+}

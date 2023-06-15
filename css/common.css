@@ -46,7 +46,7 @@
 
 .logo {
   width: 10%;
-  margin-left: 10vw;
+  margin-left: 5%;
   height: auto;
 }
 
@@ -76,6 +76,7 @@ nav ul li a {
 
 nav ul li a:hover {
   opacity:1;
+  
 }
 
 
@@ -195,56 +196,101 @@ input.submitButton:disabled {
 }
 
 
-@media only screen and (max-width: 700px) {
-  
-  .logo {
-    width: 17%;
-    margin-left: 5vw;
-    height: auto;
-  }
-  
-  .nav {
-    
-    font-size: 0.8em;
-  }
+/* Responsive Design */
+@media screen and (max-width: 850px) {
 
-  nav ul li {
+  .logo {
+
+    width: 17%;
+    
+    
+    
+    height: auto;
+    
+    }
+    
+    .nav {
+    
+    font-size: 1em;
+    
+    }
+    
+    nav ul li {
+    
     margin-right: 20px;
     
-  }
-
-  .submitButton {
+    }
+    
+    .submitButton {
+    
     font-size: 1rem;
     
-  }
-
-
-  .content {
+    }
+    
+    .content {
+    
     flex-grow: 1;
+    
     background-color: #ffffff;
+    
     max-width: 90%;
-  }
-
-  h1{
+    
+    }
+    
+    h1{
+    
     font-family: "Termina", sans-serif;
+    
     font-size: 1.3em;
+    
     text-transform: uppercase;
-  }
-  
-  
-  h3{
+    
+    }
+    
+    h3{
+    
     font-family: "Termina", sans-serif;
+    
     font-size: 1.3em;
+    
     text-transform: uppercase;
-  }
-
-   p{   
-     font-size: 0.9em;
-  }
-     
-  .footer-icons img {
-    width: 30px; 
-    height: 30px; 
-}
+    
+    }
+    
+    p{
+    
+    font-size: 0.9em;
+    
+    }
+    
+    .footer-icons img {
+    
+    width: 30px;
+    
+    height: 30px;
+    
+    }
+    
+    .row {
+    
+    flex-direction: column;
+    
+    }
+    
+    .column-teaser,
+    
+    .column {
+    
+    width: auto;
+    
+    }
+    
+    .column-teaser img,
+    
+    .column img {
+    
+    margin-bottom: 10px;
+    
+    }
 
 }

@@ -23,7 +23,7 @@
 }
 
 .column:hover::after {
-  content: "Bist du interessiert in diesem Auto? Dann kontaktiere uns gerne via Telefon oder E-Mail.";
+  content: "Bist du interessiert an diesem Auto? Dann kontaktiere uns gerne via Telefon oder E-Mail.";
   position: absolute;
   bottom: 3%;
   left: 1.5%;
@@ -47,7 +47,7 @@
 
 .hauptbild{
       width: 100%;
-      ]
+      }
       
 
 
@@ -60,15 +60,38 @@
 
    
 .ueber_uns{
-      margin-top: 15%;
+      margin-top: 5%;
       margin-bottom: 5%;
 }
 
 
-@media only screen and (max-width: 700px) {
- 
+/* Responsive Design */
+@media screen and (max-width: 850px) {
+  .column-teaser {
+    margin-bottom: 10px;
+  }
+
+ .row {
+    flex-direction: column;
+  }
   
+  .column-teaser,
+  .column {
+    width: auto;
+  }
+  
+  .column-teaser img,
+  .column img {
+    margin-bottom: 10px;
+  }
 
 
+}
+
+.column:hover::after {
+  bottom: 8%;
+  left: 2%;
+  width: 96%;
+  font-size: 0.7em; 
 
 }
