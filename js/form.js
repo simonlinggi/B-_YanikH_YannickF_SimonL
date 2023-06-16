@@ -88,9 +88,7 @@ const onClickSubmit = async () => {
     // Speichert die Daten in der Datenbank
     await databaseClient.insertInto(data);
 
-    // Formular absenden
-    const form = document.querySelector('.form');
-    form.submit();
+ 
 
   } catch (error) {
     console.error("Fehler bei der Datenbank: ", error);
